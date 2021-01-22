@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patrick Chiang's Website</title>
+  <meta name="author" content="Patrick Chiang">
+</head>
+  
+<body>
+  <header>
+    <h1>Welcome to my Website!</h1>
+    <details>
+  <summary>Patrick Chiang</summary>
+  <p>I am a CS Major in Sixth College</p>
+</details>
+    <template>
+  <h2>Flower</h2>
+  <img src="img_white_flower.jpg" width="214" height="204">
+</template>
+  </header>
+  
+  <div>Here are my <pre>social links:</pre></div>
+  <nav>
+    <a href="https://www.linkedin.com/in/patrick-chiang/">LinkedIn</a>
+    <a href="https://www.instagram.com/patrickchiangfc/">Instagram</a>
+  </nav>
+  
+  <aside>
+    <p>Honestly, I do <em>not</em> use social media that often <br> so please excuse the <span style="color:red">lack</span> of links</p>
+  </aside>
+  
+  <hr>
+  
+  <p>My all time favorite song</p>
+  <audio controls>
+    <source src="Sandstorm.mp3" type="audio/mpeg">
+  </audio>
+
+  <p>My <i>current</i> favorite song</p>
+  <iframe src="https://open.spotify.com/embed/track/64V55m8zSkracnZ6mYpjK0" width="300" height="380" allow="encrypted-media"></iframe>
+  
+  <p>One of my favorite choreographies</p>
+  <video width="320" height="240" controls>
+    <source src="niki.mp4" type="video/mp4">
+  </video>
+  
+  <p>Currently as a dancer my style is defined by the following canvas:</p>
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+  
+  <main>
+    <figure>
+      <picture>
+       <img src="KADOFF.jpg" width="100">
+      </picture>
+      <figcaption>This picture of me was taken last year before COVID19</figcaption>
+    </figure>
+    <p>Looking back at this picture, I think my head shape looks like:</p>
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+  </main>
+  
+  <section>
+    <p><b>Some of my hobbies include:</b></p>
+    <ul>
+      <li>Violin</li>
+      <li>Dance</li>
+      <li>Gaming</li>
+      <li>Martial Arts</li>
+    </ul>
+    
+    <p><strong>Some of my goals include:</strong></p>
+    <ol>
+      <li>Getting a summer internship</li>
+      <li>Expanding my <code>developer toolbox</code></li>
+      <li>Growing as a dancer</li>
+    </ol>
+  </section>
+  
+  <footer>
+    <form>
+      <fieldset>
+        <legend>About you</legend>
+      <table>
+        <caption>Fill this out</caption>
+        <colgroup>
+    <col span="2" style="background-color:teal">
+    <col style="background-color:yellow">
+  </colgroup>
+        
+        <tr>
+         <th><label for="fname">First name:</label></th>
+         <th><label for="lname">Last name:</label></th>
+         <th><label for="email">Email:</label></th>
+        </tr>
+        <tr>
+          <td><textarea id="fname" name="fname" rows="1" cols="9">First Name</textarea></td>
+         <td><input type="text" id="lname" name="lname"></td>
+         <td><input type="email" id="email" name="email"></td>
+        </tr>
+        
+        <tr>
+         <th><label for="favcolor">Select your favorite color:</label></th>
+         <th><label for="pwd">Now type it like a password:</label></th>
+         <th><label>Gender:</label></th>
+        </tr>
+        <tr>
+          <td><input type="color" id="favcolor" name="favcolor"></td>
+          <td><input type="password" id="pwd" name="pwd"></td>
+          <td><input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label></td>
+        </tr>
+        
+        <tr>
+         <th><label for="birthday">Birthday:</label></th>
+         <th><label for="resume">Resume:</label></th>
+         <th><label for="favnumber">Favorite Number (between 1 and 9)</label></th>
+        </tr>
+        <tr>
+         <td><input type="date" id="birthday" name="birthday"></td>
+         <td><input type="file" id="resume" name="myfile"></td>
+         <td><input type="number" id="favnumber" name="quantity" min="1" max="9"></td>
+        </tr>
+        
+      </table>
+      </fieldset>
+      
+      <label for="contact">Would you like me to contact you back?</label>
+       <select name="contact" id="contact">
+        <optgroup label="Yes">
+          <option value="yes">Yes</option>
+          <option value="kinda">Kinda</option>
+        </optgroup>
+        <optgroup label="No">
+          <option value="no">No</option>
+          <option value="kinda">Wouldn't mind</option>
+        </optgroup>
+       </select>
+      <br><br>
+      
+      <label for="choice">Does this website look good</label>
+  <input list="choices" name="choice" id="choice">
+  <datalist id="choices">
+    <option value="10/10">
+    <option value="Pretty Good">
+    <option value="Meh">
+    <option value="Mediocre">
+    <option value="I wish you never made this">
+  </datalist>
+      
+      <input type="submit" value="Submit">
+      <input type="reset">
+    </form>
+    <button>This does nothing to be honest</button>
+  </footer> 
+</body>
+</html>
