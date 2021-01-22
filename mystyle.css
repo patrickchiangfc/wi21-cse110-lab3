@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Yusei Magic', sans-serif;
+    src:url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+}
+
+* {
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+body, header { /* styles the body */
+    background-color: #add8e6;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+}
+  
+h1.intro { /* styles h1 */
+    color: navy;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color: rgb(100, 200, 200);
+    border-width: 5px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 75%;
+    width: 75%;
+    position:sticky;
+}
+
+#hobbies {
+    color: hsl(181, 100%, 8%);
+    margin: 75% 75% 75% 75%;
+    padding: 75% 75% 75% 75%;
+    text-decoration: overline;
+    text-align:center;
+    max-width: 75%;
+    flex-grow:5;
+    display: grid;
+    grid-template: none;
+    justify-items: stretch;
+}
+
+nav > a[href]:active {
+    background-color: aquamarine;
+    display:none;
+}
+
+figure + p:hover {
+    color: #FF00FF;
+    display:block;
+}
+
+section li {
+    position:static;
+    min-width: 25%;
+    flex-shrink:3;
+    justify-self: center;
+}
+
+p ~ section {
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+}
